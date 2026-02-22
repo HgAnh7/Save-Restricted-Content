@@ -3,10 +3,10 @@ from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN, STRING_SESSION, LOGIN_SYSTEM
 
 if STRING_SESSION is not None and LOGIN_SYSTEM == False:
-	TechVJUser = Client("HgAnh7", api_id=API_ID, api_hash=API_HASH, session_string=STRING_SESSION)
-	TechVJUser.start()
+	HgAnh7User = Client("HgAnh7", api_id=API_ID, api_hash=API_HASH, session_string=STRING_SESSION)
+	HgAnh7User.start()
 else:
-    TechVJUser = None
+    HgAnh7User = None
 
 class Bot(Client):
 
