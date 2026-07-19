@@ -10,7 +10,7 @@ else:
     STRING_SESSION = None
 
 # Bot token lấy từ @Botfather
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("TOKEN", "")
 
 # API ID của bạn lấy từ trang my.telegram.org
 API_ID = int(os.environ.get("API_ID", ""))
