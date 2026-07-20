@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from config import API_ID, API_HASH, ERROR_MESSAGE, LOGIN_SYSTEM, STRING_SESSION, CHANNEL_ID, WAITING_TIME
 from database.db import db
 from HgAnh7.strings import HELP_TXT
-from bot import TechVJUser
+from bot import HgAnh7User
 
 class batch_temp(object):
     IS_BATCH = {}
