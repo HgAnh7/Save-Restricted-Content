@@ -19,7 +19,7 @@ API_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
 
 # ID của Chủ sở hữu / Admin để sử dụng tính năng Gửi tin nhắn hàng loạt (Broadcast)
-ADMINS = int(os.environ.get("ADMINS", "6379209139"))
+ADMINS = int(os.environ.get("ADMINS", ""))
 
 # ID Kênh nơi Bot sẽ tải lên Video/File/Tin nhắn đã tải xuống...
 # Lưu ý: Hãy thêm Bot làm Admin trong kênh này với đầy đủ quyền hạn.
