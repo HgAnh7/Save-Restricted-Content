@@ -94,12 +94,12 @@ async def send_cancel(client: Client, message: Message):
 async def save(client: Client, message: Message):
     # Tham gia chat
     if ("https://t.me/+" in message.text or "https://t.me/joinchat/" in message.text) and LOGIN_SYSTEM == False:
-        if TechVJUser is None:
+        if HgAnh7User is None:
             await client.send_message(message.chat.id, "Chưa thiết lập String Session", reply_to_message_id=message.id)
             return
         try:
             try:
-                await TechVJUser.join_chat(message.text)
+                await HgAnh7User.join_chat(message.text)
             except Exception as e: 
                 await client.send_message(message.chat.id, f"Lỗi: {e}", reply_to_message_id=message.id)
                 return
@@ -134,10 +134,10 @@ async def save(client: Client, message: Message):
             except:
                 return await message.reply("**Phiên đăng nhập đã hết hạn. Vui lòng /logout sau đó đăng nhập lại bằng - /login**")
         else:
-            if TechVJUser is None:
+            if HgAnh7User is None:
                 await client.send_message(message.chat.id, f"**Chưa thiết lập String Session**", reply_to_message_id=message.id)
                 return
-            acc = TechVJUser
+            acc = HgAnh7User
                 
         batch_temp.IS_BATCH[message.from_user.id] = False
         for msgid in range(fromID, toID+1):
